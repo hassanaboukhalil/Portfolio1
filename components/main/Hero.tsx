@@ -5,7 +5,7 @@ import { Cover } from "../ui/cover";
 import { Vortex } from "../ui/vortex";
 
 const Hero = () => (
-  <section className="my-container flex items-center justify-center pt-20 md:pt-20 md:from-30% overflow-hidden h-screen">
+  <section className="my-container flex items-center justify-center  md:pt-20 md:from-30% overflow-hidden h-screen">
     <Vortex
       backgroundColor="#030014"
       className="flex items-center flex-col justify-center px-2 md:px-10 py-4 w-full text-center"

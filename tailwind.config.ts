@@ -56,6 +56,7 @@ const config = {
         color: {
           1: "#030014",
           2: "#AC6AFF",
+          3: "#0e1327",
         },
         txtColor: {
           1: "gray-400", //"#ffffff80"
@@ -115,6 +116,9 @@ const config = {
         },
         ".body-2": {
           "@apply font-light text-[0.875rem] leading-6 md:text-base": {},
+        },
+        ".navItem": {
+          "@apply font-bold text-[1rem] leading-6": {},
         },
       });
       addUtilities({

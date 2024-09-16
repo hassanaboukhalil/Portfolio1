@@ -174,11 +174,18 @@ export const Vortex = (props: VortexProps) => {
     ctx.save();
     ctx.lineCap = "round";
     ctx.lineWidth = radius;
-    ctx.strokeStyle = `hsla(${hue},100%,60%,${fadeInOut(life, ttl)})`;
+    ctx.strokeStyle = `hsla(${hue},100%,60%,${fadeInOut(life, ttl)}`;
     ctx.beginPath();
     ctx.moveTo(x, y);
     ctx.lineTo(x2, y2);
     ctx.stroke();
+
+    ctx.filter = "blur(8px) brightness(200%)";
+    ctx.globalCompositeOperation = "lighter";
+
+    ctx.filter = "blur(4px) brightness(200%)";
+    ctx.globalCompositeOperation = "lighter";
+
     ctx.closePath();
     ctx.restore();
   };
@@ -246,7 +253,7 @@ export const Vortex = (props: VortexProps) => {
         ref={containerRef}
         className="absolute h-full w-full inset-0 z-0 bg-transparent flex items-center justify-center"
       >
-        <canvas color="#030014" ref={canvasRef}></canvas>
+        <canvas ref={canvasRef}></canvas>
       </motion.div>
 
       <div className={cn("relative z-10", props.className)}>

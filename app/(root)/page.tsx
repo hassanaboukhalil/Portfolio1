@@ -1,3 +1,4 @@
+import About from "@/components/main/About";
 import { Hero } from "@/components/main/Hero";
 
 export const metadata = {
@@ -30,6 +31,7 @@ export default async function Home() {
   return (
     <>
       <Hero />
+      <About />
     </>
   );
 }

@@ -1,5 +1,6 @@
 import About from "@/components/main/About";
 import { Hero } from "@/components/main/Hero";
+import Skills from "@/components/main/Skills";
 
 export const metadata = {
   title: "Hassan | Portfolio",
@@ -32,6 +33,7 @@ export default async function Home() {
     <>
       <Hero />
       <About />
+      <Skills />
     </>
   );
 }
